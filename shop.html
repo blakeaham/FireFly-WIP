@@ -45,24 +45,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <ul class="navbar-nav mr-2 mt-2">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</span></a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="shop.html">Shop <span class="sr-only">(current)</a>
+                    <a class="nav-link" href="#!">Shop <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ucpage.html">Produce</a>
+                    <a class="nav-link" href="ucpage.html">Our Farms</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Events</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown10">
-                        <a class="dropdown-item" href="ucpage.html">Plant Sale</a>
-                        <a class="dropdown-item" href="ucpage.html">Leaf Festival</a>
-                        <a class="dropdown-item" href="ucpage.html">Workshops</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="ucpage.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ucpage.html">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contactform/formpage.html">Contact</a>
@@ -71,7 +68,7 @@
         </div>
     </nav>
     <!-- end of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
-    <div class="main-photo"><img src="../img/mainphoto.jpg"></div>
+    <!-- <div class="main-photo"><img src="../img/mainphoto.jpg"></div> -->
     <!-- carousel - does not center image or move through images -->
     <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -89,16 +86,10 @@
 
     <div class="motto">
         <p></p>
-        <p>Food is <span class='colord'>Art.</span></p>
-        <p>Food is <span class='colord'>Medicine.</span></p>
-        <p>Food is <span class='colord'>Social Justice.</span></p>
+        <p><span class='foodis'>Food is </span><span class='colord'>Art.</span></p>
+        <p><span class='foodis'>Food is </span><span class='colord'>Medicine.</span></p>
+        <p><span class='foodis'>Food is </span><span class='colord'>Social Justice.</span></p>
         <p></p>
-    </div>
-    <div class="body-text">Firefly Farm launched a commercial growing operation in 2015 with tomatoes and a few
-        other summer crops. Selling to just three restaurant partners, the organically grown produce made fast
-        friends in the local Wichita food community. In the intervening years, we have added almost 20 additional
-        restaurants partners. While heirloom tomatoes are still at the heart of our business, we now grow a variety
-        of crops in four seasons.
     </div>
     <div class="secthead m-5" align="center">
         Produce Store - Functionality coming soon!
@@ -319,7 +310,7 @@
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
             target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Subscribe to our Newsletter</label>
+                <label for="mce-EMAIL" class="farmhand">Subscribe to our Newsletter</label>
                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
                     required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

@@ -1,22 +1,11 @@
 body {
   height: 100%;
 }
-/* html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-} */
-
-@font-face {
-  font-family: farmhandsans;
-  src: url('../font/FarmhandSans-Regular.otf') format("opentype");
-}
-
 
 @font-face {
   font-family: apricots;
-  src: url('../font/Apricots.otf') format("opentype");
+  src: url('../font/Apricots.otf');
 }
-
 
 
 .container-fluid {
@@ -51,17 +40,17 @@ body {
   background-color: #f0f7ee!important;
   display: grid;
   font-size: 2em;
-  font-family: farmhandsans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   grid-area: nav;
   position: sticky!important;
 }
 
-
+@media (min-width: 992px){
   .navbar li {
       margin-left : 1em;
       margin-right : 1em;
   }
-
+}
 
 
 .main-photo {
@@ -72,18 +61,13 @@ body {
 }
 
 .main-photo > img {
-  /* object-position: 50% 50%; */
+  object-position: 50% 50%;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  /* z-index: ; */
   object-fit: cover;
 }
 
-.farmhand{
-  font-family: farmhandsans, sans-serif!important;
-  font-size: 1.5em!important;
-}
+
 
 
 .motto {
@@ -100,13 +84,10 @@ body {
 
 }
 
-.foodis {
-  font-family: farmhandsans, sans-serif;
-}
 .colord {
   color : #304242;
+  font-style: oblique;
   font-weight: 900;
-  font-family: apricots, cursive!important;
 }
 
 h1{
@@ -119,7 +100,7 @@ h1{
 
 .body-text {
   grid-area: body;
-  margin: 0 10%;
+  margin: 0 5%;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
 }
