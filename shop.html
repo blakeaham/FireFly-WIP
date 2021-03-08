@@ -1,0 +1,356 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Firefly Farm</title>
+    <meta name="description" content="Firefly Farm">
+    <meta name="author" content="SitePoint">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles_shop.css">
+
+</head>
+
+<body>
+    <!-- onclick="window.location.href='index.html';" -->
+
+    <div class="text-center">
+        <img class="site-logo mt-5 rounded mx-auto d-block" src="../img/fireflyfarmlogo_vector1.svg"
+            alt="Firefly Farm logo" class="img-fluid">
+    </div>
+    <!-- <div class="nav-bar">
+            <p class="strike">&#9</p>
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Events</p>
+            <p>Produce</p>
+            <p>Contact</p>
+            <p class="strike">&#9</p>
+        </div> -->
+    <!-- beginning of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light justify-content-md-center">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop <span class="sr-only">(current)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ucpage.html">Produce</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Events</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="ucpage.html">Plant Sale</a>
+                        <a class="dropdown-item" href="ucpage.html">Leaf Festival</a>
+                        <a class="dropdown-item" href="ucpage.html">Workshops</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactform/formpage.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+    <div class="main-photo"><img src="../img/mainphoto.jpg"></div>
+    <!-- carousel - does not center image or move through images -->
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../img/mainphoto.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../img/welcome.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="../img/welcome1.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="motto">
+        <p></p>
+        <p>Food is <span class='colord'>Art.</span></p>
+        <p>Food is <span class='colord'>Medicine.</span></p>
+        <p>Food is <span class='colord'>Social Justice.</span></p>
+        <p></p>
+    </div>
+    <div class="body-text">Firefly Farm launched a commercial growing operation in 2015 with tomatoes and a few
+        other summer crops. Selling to just three restaurant partners, the organically grown produce made fast
+        friends in the local Wichita food community. In the intervening years, we have added almost 20 additional
+        restaurants partners. While heirloom tomatoes are still at the heart of our business, we now grow a variety
+        of crops in four seasons.
+    </div>
+    <div class="secthead m-5" align="center">
+        Produce Store - Functionality coming soon!
+    </div>
+    <!-- start of collection -->
+    <div id='collection-component-1614376415945'></div>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+            if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                    ShopifyBuyInit();
+                } else {
+                    loadScript();
+                }
+            } else {
+                loadScript();
+            }
+            function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                    domain: 'ict-clean.myshopify.com',
+                    storefrontAccessToken: '3ebed006ee7b4868726aa91eb781d1e0',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('collection', {
+                        id: '242087329963',
+                        node: document.getElementById('collection-component-1614376415945'),
+                        moneyFormat: '%24%7B%7Bamount%7D%7D',
+                        options: {
+                            "product": {
+                                "styles": {
+                                    "product": {
+                                        "@media (min-width: 601px)": {
+                                            "max-width": "calc(25% - 20px)",
+                                            "margin-left": "20px",
+                                            "margin-bottom": "50px",
+                                            "width": "calc(25% - 20px)"
+                                        },
+                                        "img": {
+                                            "height": "calc(100% - 15px)",
+                                            "position": "absolute",
+                                            "left": "0",
+                                            "right": "0",
+                                            "top": "0",
+                                            "border-radius": "16px"
+                                        },
+                                        "imgWrapper": {
+                                            "padding-top": "calc(75% + 15px)",
+                                            "position": "relative",
+                                            "height": "0"
+                                        }
+                                    },
+                                    "button": {
+                                        ":hover": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        "background-color": "#304242",
+                                        ":focus": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        "border-radius": "11px"
+                                    }
+                                },
+                                "text": {
+                                    "button": "Add to cart"
+                                }
+                            },
+                            "productSet": {
+                                "styles": {
+                                    "products": {
+                                        "@media (min-width: 601px)": {
+                                            "margin-left": "-20px"
+                                        }
+                                    }
+                                }
+                            },
+                            "modalProduct": {
+                                "contents": {
+                                    "img": false,
+                                    "imgWithCarousel": true,
+                                    "button": false,
+                                    "buttonWithQuantity": true
+                                },
+                                "styles": {
+                                    "product": {
+                                        "@media (min-width: 601px)": {
+                                            "max-width": "100%",
+                                            "margin-left": "0px",
+                                            "margin-bottom": "0px"
+                                        }
+                                    },
+                                    "button": {
+                                        ":hover": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        "background-color": "#304242",
+                                        ":focus": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        "border-radius": "11px"
+                                    }
+                                },
+                                "text": {
+                                    "button": "Add to cart"
+                                }
+                            },
+                            "option": {},
+                            "cart": {
+                                "styles": {
+                                    "button": {
+                                        ":hover": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        "background-color": "#304242",
+                                        ":focus": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        "border-radius": "11px"
+                                    }
+                                },
+                                "text": {
+                                    "total": "Subtotal",
+                                    "button": "Checkout"
+                                }
+                            },
+                            "toggle": {
+                                "styles": {
+                                    "toggle": {
+                                        "background-color": "#304242",
+                                        ":hover": {
+                                            "background-color": "#2b3b3b"
+                                        },
+                                        ":focus": {
+                                            "background-color": "#2b3b3b"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                    });
+                });
+            }
+        })();
+            /*]]>*/
+    </script>
+    <!-- end of collection -->
+
+    <h1>Grow With Firefly Farm Online</h1>
+    <div class="follow-bar" style="display:flex;flex-wrap:wrap;justify-content:space-around"><a
+            href="https://www.facebook.com/fireflyfarmwichitakansas" target="_blank" rel="noopener noreferrer"
+            style="text-decoration:none;border:0;width:64px;height:64px;padding:2px;margin:5px;color:#f0f7ee;border-radius:35%;background-color:#304242;"><svg
+                class="niftybutton-facebook" style="display:block;fill:currentColor" data-tag="fac" data-name="Facebook"
+                viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <path
+                    d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                </path>
+            </svg></a><a href="https://twitter.com/FarmKansas" target="_blank" rel="noopener noreferrer"
+            style="text-decoration:none;border:0;width:64px;height:64px;padding:2px;margin:5px;color:#f0f7ee;border-radius:35%;background-color:#304242;"><svg
+                class="niftybutton-twitter" style="display:block;fill:currentColor" data-tag="twi" data-name="Twitter"
+                viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <path
+                    d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z">
+                </path>
+            </svg></a><a href="https://www.instagram.com/fireflyfarmwichita" target="_blank" rel="noopener noreferrer"
+            style="text-decoration:none;border:0;width:64px;height:64px;padding:2px;margin:5px;color:#f0f7ee;border-radius:35%;background-color:#304242;"><svg
+                class="niftybutton-instagram" style="display:block;fill:currentColor" data-tag="ins"
+                data-name="Instagram" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <path
+                    d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z">
+                </path>
+                <path
+                    d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z">
+                </path>
+                <circle cx="351.5" cy="160.5" r="21.5"></circle>
+            </svg></a><a href="https://www.youtube.com/channel/UCy3L69tf8HbzAAFgjmIMIPw" target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration:none;border:0;width:64px;height:64px;padding:2px;margin:5px;color:#f0f7ee;border-radius:35%;background-color:#304242;"><svg
+                class="niftybutton-youtube" style="display:block;fill:currentColor" data-donate="true" data-tag="you"
+                data-name="YouTube" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                <path
+                    d="M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z">
+                </path>
+            </svg></a></div>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            margin-top: 1em;
+            background: #e8dda9;
+            clear: left;
+            font: 24px "Open Sans", sans-serif;
+            width: 100%;
+        }
+
+        #mc_embed_signup label {
+            font-size: 1.5em;
+        }
+
+        #mc_embed_signup .button {
+            background-color: #304242;
+        }
+
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+        <form
+            action="https://tilthwichita.us1.list-manage.com/subscribe/post?u=b5005a84afbcf07d4a915d70e&amp;id=cd168a8d9f"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our Newsletter</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                    required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_b5005a84afbcf07d4a915d70e_cd168a8d9f" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                        class="button"></div>
+            </div>
+        </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+    <hr>
+    <footer>Copyright 2021 Firefly Farm. All Rights Reserved.</footer>
+    <!-- <div class="row">
+        <div class="col">peTrangopoes0</div>
+        <div class="col">SkrewentaQoetis1</div>
+        <div class="col">Dendellionish332</div>
+    </div> -->
+
+
+    <script src="js/scripts.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</body>
+
+</html>

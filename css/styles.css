@@ -1,0 +1,49 @@
+.welcome {
+  background-image: url(../img/welcome.png);
+
+  background-color: #cccccc;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2fr 1fr 2fr;
+  grid-template-areas:
+    "bleed"
+    "logo"
+    "banner"
+    "body";
+  align-items: center;
+  justify-items: center;
+}
+
+.welcome-logo {
+  display: grid;
+  grid-area: logo;
+}
+
+.welcome-banner {
+  margin: 18px;
+  color: #304242;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: rgba(240, 247, 238, 0.75);
+  display: grid;
+  font-size: 350%;
+  font-family: "Open Sans", sans-serif;
+  grid-area: banner;
+}
+
+.copy {
+  grid-area: body;
+  background-color: rgba(240, 247, 238, 0.75);
+  font-size: 200%;
+  padding: 18px;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+}

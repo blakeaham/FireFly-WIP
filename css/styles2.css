@@ -1,0 +1,100 @@
+body {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "logo"
+    "nav"
+    "photo"
+    "motto"
+    "body";
+  align-items: center;
+  justify-items: center;
+}
+
+.site-logo {
+  display: grid;
+  grid-area: logo;
+  max-width: 200px;
+}
+
+
+.navbar {
+  color: #304242!important;
+  /* background-image: url("../img/bar.png"); */
+  font-weight: 700;
+  width: 100%;
+  padding: 0;
+  background-color: #f0f7ee!important;
+  display: grid;
+  font-size: 2em;
+  font-family: "Alice", sans-serif;
+  grid-area: nav;
+  position: sticky!important;
+}
+
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+  }
+}
+
+
+.main-photo {
+  grid-area: photo;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+}
+
+.main-photo > img {
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.motto {
+  grid-area: motto;
+  color: #6b838b!important;
+  width: 100%;
+  margin: 24px;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: "Alice", sans-serif;
+  font-style: italic;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-around;
+
+}
+.colord {
+  color : #304242;
+}
+
+.body-text {
+  grid-area: body;
+  margin: 0 5%;
+  font-family: "Alice", sans-serif;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px){
+  .site-logo{
+    max-width: 15em;
+    justify-self: flex-start;
+  }
+  .motto {
+    font-size: 1.5em;
+  }
+}

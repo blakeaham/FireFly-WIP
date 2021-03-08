@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firefly Farm - Contact Us</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <script src="form.js"></script>
+    <meta name="author" content="SitePoint">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles_index.css?v=1.0">
+
+</head>
+
+<body>
+    <!-- <div class="nav-bar">
+            <p class="strike">&#9</p>
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Events</p>
+            <p>Produce</p>
+            <p>Contact</p>
+            <p class="strike">&#9</p>
+        </div> -->
+    <!-- beginning of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light justify-content-md-center">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ucpage.html">Produce</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Events</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="ucpage.html">Plant Sale</a>
+                        <a class="dropdown-item" href="ucpage.html">Leaf Festival</a>
+                        <a class="dropdown-item" href="ucpage.html">Workshops</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactform/formpage.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
+
+
+    <a href="../index.html">
+        <img class="site-logo " src="../img/fireflyfarmlogo_vector1.svg" alt="Firefly Farm logo" class="img-fluid"
+            height="124px">
+    </a>
+    <div class="container">
+        <!-- Form Started -->
+        <div class="container form-top">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-body">
+                            <form id="reused_form">
+                                <div class="form-group">
+                                    <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group">
+                                    <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                                    <textarea rows="3" name="message" class="form-control"
+                                        placeholder="Type Your Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-raised btn-block btn-danger">Send! &rarr;</button>
+                                </div>
+                            </form>
+                            <div id="error_message" style="width:100%; height:100%; display:none; ">
+                                <h4>
+                                    Error
+                                </h4>
+                                Sorry there was an error sending your form.
+                            </div>
+                            <div id="success_message" style="width:100%; height:100%; display:none; ">
+                                <h2>Success! Your Message was Sent.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Form Ended -->
+        <div class="contact-info mt-5">
+            <p>Contact Info</p>
+            <p>Leah@FireflyFarmWichita.com</p>
+            <p>316-305-6609</p>
+            <p>15615 E 21st Street North</p>
+            <p>Wichita, KS 67230</p>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</body>
+
+</html>

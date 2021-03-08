@@ -1,0 +1,66 @@
+.welcome {
+  background-image: url(../img/uc/12.png);
+
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #95b2b2;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-size: cover; */
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "logo"
+    "cuc"
+    "abt";
+  align-items: center;
+  justify-items: center;
+  max-height: 100;
+}
+
+.welcome-logo {
+  display: grid;
+  max-width: 30%;
+  grid-area: logo;
+}
+
+.welcome-banner {
+  margin: 18px;
+  color: #304242;
+  padding: 25px;
+  border-radius: 15px;
+
+  display: grid;
+  font-size: 350%;
+  font-family: "Open Sans", sans-serif;
+  grid-area: banner;
+}
+
+.cuc {
+  grid-area: cuc;
+  background-color: rgba(149, 178, 178, 0.35);
+  border-radius: 24px;
+}
+
+.abt {
+  grid-area: abt;
+  margin-top: 0.75em;
+  background-color: rgba(149, 178, 178, 0.35);
+  border-radius: 24px;
+}
+
+
+.copy {
+  grid-area: body;
+
+  font-size: 200%;
+  padding: 18px;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+}

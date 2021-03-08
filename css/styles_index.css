@@ -1,0 +1,219 @@
+body {
+  height: 100%;
+}
+/* html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} */
+
+@font-face {
+  font-family: apricots;
+  src: url('../font/Apricots.otf');
+}
+
+@font-face {
+  font-family: farmhandsans;
+  src: url('../font/FarmhandSans-Regular.otf');
+}
+
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "logo"
+    "nav"
+    "photo"
+    "motto"
+    "body";
+  align-items: center;
+  justify-items: center;
+}
+
+.site-logo {
+  display: grid;
+  grid-area: logo;
+  max-width: 200px;
+}
+
+
+.navbar {
+  color: #304242!important;
+  /* background-image: url("../img/bar.png"); */
+  font-weight: 700;
+  width: 100%;
+  padding: 0;
+  background-color: #f0f7ee!important;
+  display: grid;
+  font-size: 2em;
+  font-family: farmhandsans, sans-serif;
+  grid-area: nav;
+  position: sticky!important;
+}
+
+
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+  }
+
+
+
+.main-photo {
+  grid-area: photo;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+}
+
+.main-photo > img {
+  /* object-position: 50% 50%; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* z-index: ; */
+  object-fit: cover;
+}
+
+.farmhand{
+  font-family: farmhandsans, sans-serif!important;
+  font-size: 1.5em!important;
+}
+
+
+.motto {
+  grid-area: motto;
+  color: #6b838b!important;
+  width: 100%;
+  margin: 24px;
+  font-weight: 600;
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-around;
+
+}
+
+.foodis {
+  font-family: farmhandsans, sans-serif;
+}
+.colord {
+  color : #304242;
+  font-weight: 900;
+  font-family: apricots, cursive!important;
+}
+
+h1{
+  font-family: apricots, cursive!important;
+  text-align: center;
+  font-size: 400%!important;
+  margin-top: 1em!important;
+  margin-bottom: 1em!important;
+}
+
+.body-text {
+  grid-area: body;
+  margin: 0 10%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.secthead {
+  background-color: #e8DDa9;
+  color: 304242;
+  font-family: apricots, cursive;
+  font-weight: 400;
+  justify-items: center;
+  font-size: 4em;
+  border-radius: 0.25em;
+}
+
+.row1 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr ;
+  grid-template-areas: "quote leah";
+  margin: 2em 10% 2em 10%;
+  align-items: center;
+}
+
+.row1 > .c2 {
+  grid-area: quote;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+.signature {
+  font-family: apricots, cursive;
+  font-weight: 300;
+  font-size: 1.75em;
+  justify-self: end;
+}
+
+.row1 > .c3 {
+  grid-area: leah;
+}
+
+.row1 > .c3 > img{
+border-radius: 1em;
+}
+
+.row2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 2fr ;
+  grid-template-areas: "pepper text";
+  margin: 2em 10% 2em 10%;
+  align-items: center;
+}
+.row2>.c1{
+  grid-area: pepper;
+}
+.row2 > .c1 > img {
+  width: 560px;
+  border-radius: 1em;
+  max-width: 50vw;
+}
+.row2>.c2 {
+  margin-left: 2em;
+  align-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: 900;
+}
+
+hr{
+  border: 8px solid #304242!important;
+  border-radius: 0.25em;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+
+}
+
+@media (max-width: 960px){
+  .row1{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "quote"
+    "leah";
+  }
+}
+
+@media (max-width: 768px){
+  .site-logo{
+    max-width: 15em;
+    justify-self: flex-start;
+  }
+  .motto {
+    font-size: 1.5em;
+  }
+}
