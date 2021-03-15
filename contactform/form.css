@@ -5,13 +5,35 @@ html
   width:100%;
 }
 
+@font-face {
+  font-family: farmhandsans;
+  src: url('../font/FarmhandSans-Regular.otf') format("opentype");
+}
+
+
+@font-face {
+  font-family: apricots;
+  src: url('../font/Apricots.otf') format("opentype");
+}
+
 
 body{    
   background:url('../img/welcome2.jpg') no-repeat;
   background-size: cover;
   height:100%;
+  background-attachment: fixed;
   font-family:  "Open Sans", sans-serif;
 
+}
+
+.btm-txt {
+  margin-bottom: 0;
+}
+
+.b-farmhand {
+  font-weight: 900!important;
+  font-size: 2em;
+  font-family: farmhandsans, sans-serif!important;
 }
 
 @media(max-width: 500px){
@@ -36,6 +58,11 @@ body{
   width: 100%;
   justify-self: center;
 }
+
+.site-logo{
+  position: fixed;
+}
+
 .form-top{
   margin-top: 30px;
 }
@@ -68,6 +95,8 @@ body{
   background-color: rgba(240,247,238,.75);
   border-radius: 15px;
   margin-top: 5%;
+  line-height: 5%;
+  padding: 5%;
   justify-items: center;
   justify-content: center;
   justify-self: center;
@@ -93,7 +122,7 @@ body{
   background-color: #f0f7ee!important;
   display: grid;
   font-size: 2em;
-  font-family: "Open Sans", sans-serif;
+  font-family: farmhandsans, sans-serif;
   grid-area: nav;
   position: sticky!important;
 }
