@@ -1,0 +1,302 @@
+body {
+  height: 100%;
+}
+ html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} 
+
+@font-face {
+  font-family: farmhandsans;
+  src: url('../font/FarmhandSans-Regular.otf') format("opentype");
+}
+
+
+@font-face {
+  font-family: apricots;
+  src: url('../font/Apricots.otf') format("opentype");
+}
+
+
+
+.container-fluid {
+  height: 100%;
+  width: 100%;
+  /* display: grid; */
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "logo"
+    "nav"
+    "photo"
+    "motto"
+    "body";
+  align-items: center;
+  justify-items: center;
+}
+
+.site-logo {
+  /* display: grid; */
+  grid-area: logo;
+  max-width: 200px;
+}
+
+
+.navbar {
+  color: #304242!important;
+  /* background-image: url("../img/bar.png"); */
+  font-weight: 700;
+  width: 100%;
+  padding: 0;
+  background-color: #FFF!important;
+  /* display: grid; */
+  font-size: 2.5em;
+  font-family: farmhandsans, sans-serif;
+  grid-area: nav;
+  position: sticky!important;
+}
+.navbar-toggler{
+  position: sticky!important;
+}
+
+
+
+.navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+      white-space: nowrap;    
+  /* background-color: #f0f7ee; */
+}
+
+.navbar > div > ul > li > div > .dropdown-item{
+  font-size: 1.5em;
+}
+
+.navbar > div > ul > li > div{
+  /* background-color: #f0f7ee; */
+  border: 0px;
+}
+
+#navbarTogglerDemo02 {
+  /* background-color: #f0f7ee; */
+}
+
+.page-divider {
+  border-bottom-width: 2px;
+  width: 100vw;
+  border-bottom: 1px solid #5c5c5c;
+  text-align: center;
+  line-height: 1.6em;
+  margin-top: -1.6em;
+  margin-bottom: 1.6em;
+  font-size: 14px;
+  display: block; 
+  /* z-index: -1; */
+}
+
+.Menu-Btn{
+  font-size: 2em!important;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.main-photo {
+  grid-area: photo;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+}
+
+.main-photo > img {
+  /* object-position: 50% 50%; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* z-index: ; */
+  object-fit: cover;
+}
+
+.farmhand{
+  font-family: farmhandsans, sans-serif!important;
+  font-size: 1.5em!important;
+}
+
+
+.motto {
+  grid-area: motto;
+  color: #6b838b!important;
+  width: 100%;
+  margin: 24px;
+  font-weight: 600;
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+}
+
+.motto > p {
+  margin-right: .5em;
+  margin-left: .5em;
+  white-space: nowrap;
+}
+
+.foodis {
+  font-family: farmhandsans, sans-serif;
+}
+.colord {
+  color : #304242;
+  font-weight: 900;
+  font-family: apricots, cursive!important;
+}
+
+h1{
+  font-family: apricots, cursive!important;
+  text-align: center;
+  font-size: 400%!important;
+  margin-top: 1em!important;
+  margin-bottom: 1em!important;
+}
+
+#grow {
+  margin-bottom: 0.25em!important;
+  font-size: 300%!important;
+}
+
+h2{
+  font-family: apricots, cursive!important;
+  font-size: 2.5em!important;
+}
+
+.body-text {
+  text-align: justify;
+  text-justify: inter-word!important;
+  margin: 0 10%;
+  /* margin-top: 2em; */
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.headshot {
+ max-width: 100%;
+ max-height: 100%;
+}
+
+
+
+.secthead {
+  background-color: #e8DDa9;
+  color: 304242;
+  font-family: apricots, cursive;
+  font-weight: 400;
+  justify-items: center;
+  font-size: 4em;
+  border-radius: 0.25em;
+}
+
+.container1{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "leah ron";
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.col1{
+  grid-area: leah;
+  margin: 1em;
+}
+
+.col2{
+  grid-area: ron;
+  margin: 1em;
+}
+
+.colbio > div > img{
+  border-radius: 1em;
+}
+
+.colbio > p {
+  margin: 1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+}
+
+.centered {
+  text-align: center;
+}
+
+.just-txt{
+  text-align: justify;
+}
+
+hr{
+  border: 8px solid #304242!important;
+  border-radius: 0.25em;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+
+}
+
+@media (max-width: 960px){
+  .row1{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "quote"
+    "leah";
+  }
+  
+  .row2{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "text"
+    "pepper";
+  }
+  .row2 > .c2{
+  margin: auto;
+  }
+
+  .row2 > .c1 {
+    text-align: center;
+  }
+  .row2 > .c1 > img {
+    max-width: 85%;
+  }
+
+  .navbar{
+    font-size: 2em;
+  }
+
+}
+
+@media (max-width: 768px){
+  .site-logo{
+    max-width: 15em;
+    justify-self: flex-start;
+  }
+
+  .motto {
+    font-size: 1.5em;
+  }
+  .page-divider {
+    display: none;
+  }
+
+  .container1{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: "leah"
+     "ron";
+     margin-left: 1em;
+  margin-right: 1em;
+  }
+}
+
+@media (max-width: 576px){
+  .motto{
+    font-size: 1em;
+  }
+}
