@@ -227,7 +227,8 @@ h2{
 }
 
 .just-txt{
-  text-align: justify;
+  text-align: justify!important;
+  text-align-last: center;
 }
 
 hr{
@@ -239,6 +240,27 @@ footer {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 
+}
+
+/* bring to ALL */
+.nav-link{
+  color: #304242!important;
+}
+
+/* BRING ALL */
+.secthead {
+  background-color: #e8DDa9;
+  color:#304242;
+  color: 304242;
+  font-family: apricots, cursive;
+  font-weight: 400;
+  justify-items: center;
+  font-size: 4em;
+  border-radius: 0.25em;
+}
+/* Bring to ALL */
+#mc-embedded-subscribe{
+  background-color: #304242!important;
 }
 
 @media (max-width: 960px){

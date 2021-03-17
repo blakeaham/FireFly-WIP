@@ -127,6 +127,27 @@ body{
   position: sticky!important;
 }
 
+/* bring to ALL */
+.nav-link{
+  color: #304242!important;
+}
+
+/* BRING ALL */
+.secthead {
+  background-color: #e8DDa9;
+  color:#304242;
+  color: 304242;
+  font-family: apricots, cursive;
+  font-weight: 400;
+  justify-items: center;
+  font-size: 4em;
+  border-radius: 0.25em;
+}
+/* Bring to ALL */
+#mc-embedded-subscribe{
+  background-color: #304242!important;
+}
+
 @media (min-width: 992px){
   .navbar li {
       margin-left : 1em;

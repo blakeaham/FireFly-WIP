@@ -174,7 +174,7 @@ h2{
   margin: 0 10%;
   /* margin-top: 2em; */
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 .headshot {
@@ -299,6 +299,27 @@ footer {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 
+}
+
+/* bring to ALL */
+.nav-link{
+  color: #304242!important;
+}
+
+/* BRING ALL */
+.secthead {
+  background-color: #e8DDa9;
+  color:#304242;
+  color: 304242;
+  font-family: apricots, cursive;
+  font-weight: 400;
+  justify-items: center;
+  font-size: 4em;
+  border-radius: 0.25em;
+}
+/* Bring to ALL */
+#mc-embedded-subscribe{
+  background-color: #304242!important;
 }
 
 @media (max-width: 960px){
