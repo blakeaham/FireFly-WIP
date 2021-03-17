@@ -69,7 +69,6 @@ body {
 
 
 
-
 .motto {
   grid-area: motto;
   color: #6b838b!important;
@@ -79,11 +78,16 @@ body {
   font-size: 2em;
   font-family: "Open Sans", sans-serif;
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  justify-content: space-around;
-
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 
+.motto > p {
+  margin-right: .5em;
+  margin-left: .5em;
+  text-align: center;
+  white-space: nowrap;
+}
 .colord {
   color : #304242;
   font-style: oblique;

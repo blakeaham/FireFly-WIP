@@ -1,0 +1,26 @@
+.barn-gradient {
+  background: rgb(48,66,66);
+background: linear-gradient(180deg, rgba(48,66,66,1) 0%, rgba(107,131,139,1) 25%, rgba(149,178,178,1) 50%, rgba(240,247,238,1) 75%, rgba(232,221,169,1) 100%);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #7a7a7a;
+}
+
+.barn-gradient-fill{
+  background: rgb(48,66,66);
+  background: linear-gradient(180deg, rgba(48,66,66,1) 0%, rgba(107,131,139,1) 25%, rgba(149,178,178,1) 50%, rgba(240,247,238,1) 75%, rgba(232,221,169,1) 100%);
+  
+}
+
+
+@media (max-width: 960px){
+  .sect-body-left {
+    margin-right: 0em;
+  }
+  
+  .sect-body-right {
+    margin-left: 0em;
+  }
+
+}

@@ -197,7 +197,7 @@ h2{
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr ;
   grid-template-areas: "quote leah";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 
@@ -229,7 +229,7 @@ border-radius: 1em;
   grid-template-rows: auto;
   grid-template-columns: 1fr 2fr ;
   grid-template-areas: "pepper text";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 .row2>.c1{
@@ -254,7 +254,7 @@ border-radius: 1em;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr ;
   grid-template-areas: "quote leah";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 
@@ -343,6 +343,9 @@ footer {
   }
   .page-divider {
     display: none;
+  }
+  .body-text{
+    margin: 0;
   }
 }
 

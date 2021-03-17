@@ -121,6 +121,22 @@ body {
   font-size: 1.5em!important;
 }
 
+.apricots {
+  font-family: apricots, cursive!important;
+  
+}
+
+.fall-gradient {
+  background: rgb(78,39,24);
+background: linear-gradient(90deg, rgba(78,39,24,1) 0%, rgba(141,16,40,1) 22%, rgba(196,12,35,1) 28%, rgba(217,90,25,1) 43%, rgba(236,160,19,1) 54%, rgba(215,83,27,1) 62%, rgba(196,12,35,1) 80%, rgba(78,39,24,1) 100%);
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fall-leaves {
+  background-image: url(../img/fall-leaves-small-texture.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .motto {
   grid-area: motto;
@@ -197,7 +213,7 @@ h2{
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr ;
   grid-template-areas: "quote leah";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 
@@ -229,7 +245,7 @@ border-radius: 1em;
   grid-template-rows: auto;
   grid-template-columns: 1fr 2fr ;
   grid-template-areas: "pepper text";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 .row2>.c1{
@@ -254,7 +270,7 @@ border-radius: 1em;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr ;
   grid-template-areas: "quote leah";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 
@@ -326,16 +342,24 @@ footer {
   .row1{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "quote"
-    "leah";
+    grid-template-areas: "leah"
+    "quote";
   }
   
   .row2{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    grid-template-areas: "text"
-    "pepper";
+    grid-template-areas: "pepper"
+    "text";
   }
+
+  .row3{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "leah"
+    "quote";
+  }
+  
   .row2 > .c2{
   margin: auto;
   }
@@ -349,6 +373,9 @@ footer {
 
   .navbar{
     font-size: 2em;
+  }
+  .body-text{
+    margin: 0;
   }
 
 }
@@ -365,10 +392,19 @@ footer {
   .page-divider {
     display: none;
   }
+  .body-text{
+    margin: 0;
+  }
 }
 
 @media (max-width: 576px){
   .motto{
     font-size: 1em;
+  }
+}
+
+@media (min-width: 1500px){
+  .body-text{
+    font-size: 2.5rem;
   }
 }

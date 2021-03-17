@@ -121,6 +121,10 @@ body {
   font-size: 1.5em!important;
 }
 
+.apricots {
+  font-family: apricots, cursive!important;
+}
+
 
 .motto {
   grid-area: motto;
@@ -131,15 +135,17 @@ body {
   font-size: 2em;
   font-family: "Open Sans", sans-serif;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
 }
 
 .motto > p {
   margin-right: .5em;
   margin-left: .5em;
+  text-align: center;
   white-space: nowrap;
 }
+
 
 .foodis {
   font-family: farmhandsans, sans-serif;

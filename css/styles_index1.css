@@ -38,7 +38,7 @@ body {
 .site-logo {
   /* display: grid; */
   grid-area: logo;
-  max-width: 20%;
+  max-width: 20rem;
 }
 
 
@@ -82,9 +82,7 @@ body {
   border: 0px;
 }
 
-#navbarTogglerDemo02 {
-  /* background-color: #f0f7ee; */
-}
+
 
 .page-divider {
   border-bottom-width: 2px;
@@ -135,18 +133,19 @@ body {
   grid-area: motto;
   color: #6b838b!important;
   width: 100%;
-  margin: 24px;
+  /* margin: 24px; */
   font-weight: 600;
   font-size: 2em;
   font-family: "Open Sans", sans-serif;
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns:5% 30% 30% 30% 5%;
   justify-content: center;
 }
 
 .motto > p {
   margin-right: .5em;
   margin-left: .5em;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -224,9 +223,6 @@ h2{
   font-weight: 400;
 }
 
-.sect-body-left {
-  margin-right: 2em;
-}
 
 .signature {
   font-family: apricots, cursive;
@@ -360,6 +356,13 @@ footer {
   .navbar{
     font-size: 2em;
   }
+  .sect-body-left {
+    margin-right: 0em;
+  }
+  
+  .sect-body-right {
+    margin-left: 0em;
+  }
 
 }
 
@@ -375,10 +378,18 @@ footer {
   .page-divider {
     display: none;
   }
+  
 }
 
 @media (max-width: 576px){
   .motto{
     font-size: 1em;
+  }
+  .sect-body-left {
+    margin-right: 0em;
+  }
+  
+  .sect-body-right {
+    margin-left: 0em;
   }
 }
