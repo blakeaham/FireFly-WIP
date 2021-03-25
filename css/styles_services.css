@@ -59,7 +59,9 @@ body {
   position: sticky!important;
 }
 
-
+.nav-link{
+  color: #304242!important;
+}
 
 .navbar li {
       margin-left : 1em;
@@ -183,8 +185,8 @@ h2{
 }
 
 .secthead {
-  background-color: #e8DDa9;
-  color: 304242;
+  /* background-color: #e8DDa9; */
+  /* color: 304242; */
   font-family: apricots, cursive;
   font-weight: 400;
   justify-items: center;
