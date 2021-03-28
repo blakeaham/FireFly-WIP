@@ -188,19 +188,39 @@ h2{
 
 .headshot {
  max-width: 100%;
- max-height: 100%;
+ height: 100%;
+ object-fit: cover;
+  max-height: 65vh;
 }
 /* BRING ALL */
 .secthead {
-  background-color: #e8DDa9;
-  color:#304242;
-  color: 304242;
+  /* background-color: #e8DDa9; */
+  /* color:#304242; */
+  /* color: 304242; */
   font-family: apricots, cursive;
   font-weight: 400;
   justify-items: center;
   font-size: 4em;
   border-radius: 0.25em;
 }
+
+/* imports from Events */
+.inside-secthead {
+  grid-area: head;
+    font-family: apricots, cursive;
+  font-weight: 400;
+}
+
+.inside-secthead-left {
+  justify-items: start;
+  text-align: left; 
+}
+
+.inside-secthead-right {
+  justify-items: end;
+  text-align: right; 
+}
+
 /* Bring to ALL */
 #mc-embedded-subscribe{
   background-color: #304242!important;
@@ -247,6 +267,11 @@ border-radius: 1em;
   grid-template-areas: "pepper text";
   margin: 2em 10% 2em 10%;
   align-items: center;
+  /* import from events */
+  background-color: #e8DDa9;
+  padding: 2rem 4rem 2rem 4rem;
+  /* border-radius: 3rem; */
+  margin: 2rem 0 2rem 0;
 }
 .row2>.c1{
   grid-area: pepper;

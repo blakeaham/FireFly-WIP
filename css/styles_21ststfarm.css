@@ -50,7 +50,7 @@ body {
   padding: 0;
   background-color: #FFF!important;
   /* display: grid; */
-  font-size: 2.5em;
+  font-size: 3rem!important;
   font-family: farmhandsans, sans-serif;
   grid-area: nav;
   position: sticky!important;
@@ -191,7 +191,7 @@ h2{
 
 
 .secthead {
-  background-color: #e8DDa9;
+  /* background-color: #e8DDa9; */
   color: 304242;
   font-family: apricots, cursive;
   font-weight: 400;
@@ -255,7 +255,7 @@ footer {
 
 /* BRING ALL */
 .secthead {
-  background-color: #e8DDa9;
+  /* background-color: #e8DDa9; */
   color:#304242;
   color: 304242;
   font-family: apricots, cursive;
