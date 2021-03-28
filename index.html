@@ -41,7 +41,7 @@
         </div> -->
 
     <!-- beginning of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light justify-content-md-center">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light mb-4 bg-light justify-content-md-center">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -105,10 +105,25 @@
      barn-gradient
     fall-gradient
     -->
-    <div class="text-center col-md-12">
-        <img class="img-fluid mb-3" src="../img/splashimg.jpg">
-    </div>
-    <div class="motto">
+    <!-- Working Carousel -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active"  data-bs-interval="5000">
+            <img src="../img/carousel3.jpg" class="cimg d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="../img/carousel2.jpg" class="cimg d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="../img/peppers.jpg" class="cimg d-block w-100" alt="...">
+          </div>
+          <!-- <div class="carousel-item" data-bs-interval="5000">
+            <img src="../img/carousel3.jpg" class="cimg d-block w-100" alt="...">
+          </div> -->
+        </div>
+      </div>
+      <!-- End of Working Carousel -->
+    <div class="motto d-flex flex-column mt-4 flex-lg-row justify-content-lg-around">
         <p></p>
         <p id="m1"><span class='foodis'>Food is </span><span class='colord'>Art.</span></p>
         <p id="m2"><span class='foodis'>Food is </span><span class='colord'>Medicine.</span></p>
@@ -128,10 +143,10 @@
     <div class="row1">
 
         <div class="c2 mt-5 centered" align="center">
-            <div class="secthead inside-secthead inside-secthead-left" align="center">
+            <div class="secthead inside-secthead m-2" align="center">
                 a word about how we grow
             </div>
-            <p class="just-txt sect-body-left">
+            <p class="just-txt m-5">
                 We care a lot about how food tastes, so we scour the market to find the most delicious fruit and
                 vegetable varieties to grow. Whenever we can, we grow from organic, heirloom seeds and root stock. We
                 never use genetically modified organisms.
@@ -149,7 +164,7 @@
         <div class="c3"><img class="headshot" src="../img/leah-headshot.jpg"></div>
 
     </div>
-    <div class="row2">
+    <!-- <div class="row2">
         <div class="c1"><img src="../img/peppers.jpg"></div>
         <div class="c2">
             <p class="just-txt sect-body-right">Opening our farm yard to  farmers' market vendors and pop-up,
@@ -159,7 +174,7 @@
                 updates.  Come experience our thoughtfully curated group of vendors and learn the backstory of your
                 local food.</p>
         </div>
-    </div>
+    </div> -->
     <h1 id="grow">grow with Firefly Farm online</h1>
     <div class="follow-bar" style="display:flex;flex-wrap:wrap;justify-content:center"><a
             href="https://www.facebook.com/fireflyfarmwichitakansas" target="_blank" rel="noopener noreferrer"

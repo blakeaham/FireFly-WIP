@@ -54,7 +54,7 @@ body {
   font-family: farmhandsans, sans-serif;
   grid-area: nav;
   position: sticky!important;
-  margin-bottom: 1em!important;
+  /* margin-bottom: 1em!important; */
 }
 
 .navbar-toggler{
@@ -96,6 +96,30 @@ body {
   display: block; 
   /* z-index: -1; */
 }
+
+/* CAROUSEL */
+.carousel {
+  width:100vw;
+  height:55vh;
+}
+
+.carousel-inner {
+  /* make sure your .items will get correct height */
+  height: 100%;
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.cimg {
+  max-height: 55vh;
+  object-fit: cover;
+}
+/* end carousel */
 
 .Menu-Btn{
   font-size: 2em!important;
@@ -143,8 +167,8 @@ body {
 }
 
 .motto > p {
-  margin-right: .5em;
-  margin-left: .5em;
+  /* margin-right: .5em; */
+  /* margin-left: .5em; */
   text-align: center;
   white-space: nowrap;
 }
@@ -353,7 +377,12 @@ footer {
 }
 
 
+@media (max-width: 1340px){
+  .motto {
+    font-size: 3.5rem;
+  }}
 @media (max-width: 960px){
+  
   .row1{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -389,6 +418,9 @@ footer {
     margin-left: 0em;
   }
 
+  .motto {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px){
@@ -399,9 +431,12 @@ footer {
 
   .motto {
     font-size: 1.5em;
-  }
-  .page-divider {
-    display: none;
+
+  color: #6b838b!important;
+  width: 100%;
+  /* margin: 24px; */
+  font-family: "Open Sans", sans-serif;
+  justify-content: center;
   }
   
 }

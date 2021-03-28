@@ -16,8 +16,16 @@ body {
   font-family: apricots;
   src: url('../font/Apricots.otf') format("opentype");
 }
+/* NECESARY CAROUSEL CSS */
+.carousel {
+  width:100vw;
+  height:25vh;
+}
 
-
+.cimg {
+  max-height: 20vh;
+  object-fit: cover;
+}
 
 .container-fluid {
   height: 100%;
@@ -180,7 +188,7 @@ h2{
   margin: 0 10%;
   /* margin-top: 2em; */
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 .headshot {
@@ -202,10 +210,10 @@ h2{
 
 .container1{
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "leah ron";
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  grid-template-columns: auto 15% auto;
+  grid-template-areas: "leah empty ron";
+  margin-left: 9.5rem;
+  margin-right: 9.5rem;
 }
 
 .col1{
@@ -219,13 +227,14 @@ h2{
 }
 
 .colbio > div > img{
-  border-radius: 1em;
+  border-radius: 60%;
+  width:30%
 }
 
 .colbio > p {
   margin: 1em;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.25em;
+  font-size: 2rem;
 }
 
 .centered {
@@ -251,6 +260,10 @@ footer {
 /* bring to ALL */
 .nav-link{
   color: #304242!important;
+}
+
+.row1{
+  background-color: #E8DDa9;
 }
 
 /* BRING ALL */
@@ -315,11 +328,16 @@ footer {
 
   .container1{
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: "leah"
      "ron";
      margin-left: 1em;
   margin-right: 1em;
+  }
+  .colbio > div > img{
+    border-radius: 60%;
+    width:40%
   }
 }
 
