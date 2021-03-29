@@ -58,7 +58,7 @@ body {
   padding: 0;
   background-color: #FFF!important;
   /* display: grid; */
-  font-size: 3rem!important;
+  font-size: 3.5rem!important;
   font-family: farmhandsans, sans-serif;
   grid-area: nav;
   position: sticky!important;
@@ -204,7 +204,6 @@ h2{
   font-family: apricots, cursive;
   font-weight: 400;
   justify-items: center;
-  font-size: 4em;
   border-radius: 0.25em;
 }
 
@@ -234,7 +233,7 @@ h2{
 .colbio > p {
   margin: 1em;
   font-family: "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .centered {
@@ -274,7 +273,6 @@ footer {
   font-family: apricots, cursive;
   font-weight: 400;
   justify-items: center;
-  font-size: 4em;
   border-radius: 0.25em;
 }
 /* Bring to ALL */

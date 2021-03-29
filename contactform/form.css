@@ -20,6 +20,7 @@ html
 body{    
   background:url('../img/contactbg.jpg') no-repeat;
   background-size: cover;
+  background-position: right top;
   height:100%;
   background-attachment: fixed;
   font-family:  "Open Sans", sans-serif;

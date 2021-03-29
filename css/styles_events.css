@@ -169,14 +169,13 @@ background: linear-gradient(90deg, rgba(78,39,24,1) 0%, rgba(141,16,40,1) 22%, r
 h1{
   font-family: apricots, cursive!important;
   text-align: center;
-  font-size: 400%!important;
   margin-top: 1em!important;
   margin-bottom: 1em!important;
 }
 
 #grow {
   /* margin-bottom: 0.25em!important; */
-  font-size: 300%!important;
+  font-size: 6rem;
   margin: 0 0 2rem 0!important;
 }
 
