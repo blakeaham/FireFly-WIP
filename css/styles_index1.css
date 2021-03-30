@@ -116,6 +116,8 @@ body {
 }
 
 .cimg {
+  
+    height: 100%!important;
   max-height: 55vh;
   object-fit: cover;
 }
@@ -383,7 +385,6 @@ footer {
   }}
 @media (max-width: 960px){
   .cimg {
-    width: ;
     height: 100%!important;
   }
   
@@ -429,7 +430,6 @@ footer {
 
 @media (max-width: 768px){
   .cimg {
-    width: ;
     height: 100%!important;
   }
   .site-logo{
