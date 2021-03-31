@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 } 
 
+
+.biopic{
+  box-shadow: 3px 3px 5px #304242;
+}
+
 @font-face {
   font-family: farmhandsans;
   src: url('../font/FarmhandSans-Regular.otf') format("opentype");
@@ -173,7 +178,8 @@ h1{
 }
 
 #grow {
-  margin-bottom: 0.25em!important;
+  margin-bottom: 1rem!important;
+  margin-top: 1.5rem!important;
   font-size: 300%!important;
 }
 
@@ -182,10 +188,16 @@ h2{
   font-size: 2.5em!important;
 }
 
+.x-marg{
+  margin: 0 10%
+}
+
+
+
 .body-text {
   text-align: justify;
   text-justify: inter-word!important;
-  margin: 0 10%;
+  
   /* margin-top: 2em; */
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
@@ -308,6 +320,9 @@ footer {
   .navbar{
     font-size: 2em;
   }
+  .plantsale.sqr {
+    margin-top: 1rem;
+  }
 
 }
 
@@ -324,6 +339,10 @@ footer {
     display: none;
   }
 
+  .x-marg{
+    margin: 0 1.5rem
+  }
+
   .container1{
     display: grid;
     grid-template-columns: 1fr;
@@ -336,6 +355,18 @@ footer {
   .colbio > div > img{
     border-radius: 60%;
     width:40%
+  }
+  .colbio > p {
+    margin: 2rem 1.5rem;
+  }
+  .col1.colbio{
+    margin: 1rem 0 0 0;
+  }
+  .col2.colbio{
+    margin: 1rem 0 0 0;
+  }
+  .plantsale.sqr {
+    margin-top: 1rem;
   }
 }
 

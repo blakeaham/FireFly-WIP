@@ -206,10 +206,14 @@ h2{
 .body-text {
   text-align: justify;
   text-justify: inter-word!important;
-  margin: 0 10%;
+  /* margin: 0 10%; */
   /* margin-top: 2em; */
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
+}
+
+.top-blurb{
+  margin: 0 10%;
 }
 
 .headshot {
@@ -437,6 +441,13 @@ footer {
     justify-self: flex-start;
   }
 
+  .top-blurb{
+    margin: 0 1.5rem;
+  }
+
+  .row1{
+    margin: 3rem 1.5rem
+  }
   .motto {
     font-size: 1.5em;
 

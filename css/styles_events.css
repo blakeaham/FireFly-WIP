@@ -17,7 +17,10 @@ body {
   src: url('../font/Apricots.otf') format("opentype");
 }
 
-
+/* img{
+  height: 100%;
+  object-fit: cover;
+} */
 
 .container-fluid {
   height: 100%;
@@ -277,7 +280,6 @@ border-radius: 1em;
   max-width: 100%;
 }
 .row2>.c2 {
-  margin-left: 2em;
   align-content: center;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
@@ -299,7 +301,6 @@ border-radius: 1em;
 .row3 > .c1 {
   grid-area: quote;
   align-content: center;
-  margin-right: 1em;
   font-family: "Open Sans", sans-serif;
   font-size: 1.25em;
   font-weight: 400;
@@ -412,7 +413,7 @@ footer {
     text-align: center;
   }
   .row2 > .c1 > img {
-    max-width: 85%;
+    /* max-width: 85%; */
   }
 
   .navbar{
@@ -428,6 +429,11 @@ footer {
   .site-logo{
     max-width: 15em;
     justify-self: flex-start;
+  }
+  .bubble {
+
+    margin: 0 4rem 0 4rem;
+
   }
 
   .motto {
@@ -445,6 +451,19 @@ footer {
   .motto{
     font-size: 1em;
   }
+  .bubble {
+    margin: 0 1rem 0 1rem;
+  }
+  .row1{
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+  .row2{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+  .row3{
+    padding: 2rem 1.5rem 2rem 1.5rem;
+  }
+
 }
 
 @media (min-width: 1500px){
