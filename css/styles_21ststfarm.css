@@ -107,6 +107,13 @@ body {
   /* z-index: -1; */
 }
 
+#myBtn{
+  cursor: pointer;
+}
+#myBtn1{
+  cursor: pointer;
+}
+
 .Menu-Btn{
   font-size: 2em!important;
   margin-left: 1em;
