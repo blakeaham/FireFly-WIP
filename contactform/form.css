@@ -28,6 +28,14 @@ body{
 
 }
 
+.text-center {
+  text-align: center!important;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
 
 .btm-txt {
   margin-bottom: 0;
