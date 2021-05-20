@@ -383,6 +383,14 @@ footer {
   background-color: #304242!important;
 }
 
+@media (min-width: 996px) {
+  .tall_big{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+  }
+}
+
+
 @media (max-width: 960px){
   .row1{
     grid-template-columns: auto;
