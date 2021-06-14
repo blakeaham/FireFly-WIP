@@ -1,11 +1,16 @@
 body {
+
   height: 100%;
+
 }
  html, body {
   max-width: 100%;
   overflow-x: hidden;
+  /* scroll-snap-type: y mandatory; */
 } 
-
+html{
+  /* scroll-snap-type: y mandatory; */
+}
 @font-face {
   font-family: farmhandsans;
   src: url('../font/FarmhandSans-Regular.otf') format("opentype");
@@ -21,7 +26,12 @@ body {
   height: 100%;
   object-fit: cover;
 } */
+.scrolly{
 
+  scroll-snap-type: block mandatory;
+  /* display: flex; */
+  /* height: 100vh; */
+}
 .container-fluid {
   height: 100%;
   width: 100%;
@@ -205,7 +215,15 @@ h2{
 }
 .headshot {
  max-width: 100%;
- max-height: 100%;
+height: 100%;
+ object-fit: cover;
+ max-height: 85vh;
+ scroll-snap-align: start;
+ scroll-margin: 2em;
+}
+.sscenter{
+  scroll-snap-align: start;
+  /* scroll-snap-stop: always;  */
 }
 
 /* .secthead {
@@ -222,27 +240,27 @@ h2{
   display: grid;
   grid-template-rows: auto;
   /* background-color: #e8DDa9; */
-  padding: 2rem 4rem 2rem 4rem;
+  /* padding: 2rem 4rem 2rem 4rem; */
   /* border-radius: 3rem; */
   grid-template-columns: 2fr 1fr ;
-  grid-template-areas:
-   "quote leah";
-  margin: 2rem 0 2rem 0;
+  grid-template-areas: "quote leah";
+  /* margin: 2rem 0 2rem 0; */
+  margin: 2em 10% 2em 10%;
   align-items: center;
 }
 
-.row1-5{
+/* .row1-5{
   background: rgb(232,221,169);
 background: linear-gradient(0deg, rgba(232,221,169,1) 0%, rgba(255,255,255,0) 100%);
   margin: 0;
   height: 4rem;
-}
+} */
 
 .row1 > .c2 {
   grid-area: quote;
   align-content: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.75em;
   font-weight: 400;
 }
 
@@ -384,9 +402,12 @@ footer {
 }
 
 @media (min-width: 996px) {
-  .tall_big{
+  /* .tall_big{
     padding-top: 30vh;
     padding-bottom: 30vh;
+  } */
+  .tall_big{
+    height: 120vh;
   }
 }
 
@@ -394,9 +415,9 @@ footer {
 @media (max-width: 960px){
   .row1{
     grid-template-columns: auto;
-    grid-template-rows:auto auto auto;
-    grid-template-areas: "head" "leah"
-    "quote";
+    grid-template-rows: auto auto;
+    grid-template-areas: "quote"
+    "leah";
   }
   
   .row2{
@@ -443,6 +464,9 @@ footer {
     margin: 0 4rem 0 4rem;
 
   }
+  .row1{
+    margin: 3rem 1.5rem
+  }
 
   .motto {
     font-size: 1.5em;
@@ -462,8 +486,7 @@ footer {
   .bubble {
     margin: 0 1rem 0 1rem;
   }
-  .row1{
-  padding: 2rem 1.5rem 2rem 1.5rem;
+
   }
   .row2{
     padding: 2rem 1.5rem 2rem 1.5rem;
