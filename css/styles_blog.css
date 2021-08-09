@@ -38,7 +38,7 @@ body {
 .site-logo {
   /* display: grid; */
   grid-area: logo;
-  max-width: 20rem;
+  max-width: 200px;
 }
 
 
@@ -54,14 +54,11 @@ body {
   font-family: farmhandsans, sans-serif;
   grid-area: nav;
   position: sticky!important;
-  /* margin-bottom: 1em!important; */
 }
-
 .navbar-toggler{
   position: sticky!important;
 }
 
-/* bring to ALL */
 .nav-link{
   color: #304242!important;
 }
@@ -82,7 +79,9 @@ body {
   border: 0px;
 }
 
-
+#navbarTogglerDemo02 {
+  /* background-color: #f0f7ee; */
+}
 
 .page-divider {
   border-bottom-width: 2px;
@@ -96,32 +95,6 @@ body {
   display: block; 
   /* z-index: -1; */
 }
-
-/* CAROUSEL */
-.carousel {
-  width:100vw;
-  height:55vh;
-}
-
-.carousel-inner {
-  /* make sure your .items will get correct height */
-  height: 100%;
-}
-
-.carousel-item {
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 100%;
-}
-
-.cimg {
-  
-    height: 100%!important;
-  max-height: 55vh;
-  object-fit: cover;
-}
-/* end carousel */
 
 .Menu-Btn{
   font-size: 2em!important;
@@ -147,11 +120,7 @@ body {
 
 .farmhand{
   font-family: farmhandsans, sans-serif!important;
-
-}
-
-.darkbarn {
-  color:#304242!important;
+  font-size: 1.5em!important;
 }
 
 
@@ -159,19 +128,18 @@ body {
   grid-area: motto;
   color: #6b838b!important;
   width: 100%;
-  /* margin: 24px; */
+  margin: 24px;
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 2em;
   font-family: "Open Sans", sans-serif;
   display: grid;
-  grid-template-columns:5% 30% 30% 30% 5%;
+  grid-template-columns: repeat(5, auto);
   justify-content: center;
 }
 
 .motto > p {
-  /* margin-right: .5em; */
-  /* margin-left: .5em; */
-  text-align: center;
+  margin-right: .5em;
+  margin-left: .5em;
   white-space: nowrap;
 }
 
@@ -179,7 +147,7 @@ body {
   font-family: farmhandsans, sans-serif;
 }
 .colord {
-  /* color : #304242; */
+  color : #304242;
   font-weight: 900;
   font-family: apricots, cursive!important;
 }
@@ -187,15 +155,12 @@ body {
 h1{
   font-family: apricots, cursive!important;
   text-align: center;
-  font-size: 400%!important;
   margin-top: 1em!important;
   margin-bottom: 1em!important;
 }
 
 #grow {
   margin-bottom: 0.25em!important;
-  font-size: 300%!important;
-  color:#304242!important;
 }
 
 h2{
@@ -206,62 +171,32 @@ h2{
 .body-text {
   text-align: justify;
   text-justify: inter-word!important;
-  /* margin: 0 10%; */
+  margin: 0 10%;
   /* margin-top: 2em; */
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
 }
 
-.top-blurb{
-  margin: 0 10%;
-}
-
 .headshot {
  max-width: 100%;
- height: 100%;
- object-fit: cover;
-  max-height: 65vh;
+ max-height: 100%;
 }
-/* BRING ALL */
+
 .secthead {
   /* background-color: #e8DDa9; */
-  /* color:#304242; */
   /* color: 304242; */
   font-family: apricots, cursive;
   font-weight: 400;
   justify-items: center;
-  font-size: 6rem;
+  font-size: 4em;
   border-radius: 0.25em;
-}
-
-/* imports from Events */
-.inside-secthead {
-  grid-area: head;
-    font-family: apricots, cursive;
-  font-weight: 400;
-}
-
-.inside-secthead-left {
-  justify-items: start;
-  text-align: left; 
-}
-
-.inside-secthead-right {
-  justify-items: end;
-  text-align: right; 
-}
-
-/* Bring to ALL */
-#mc-embedded-subscribe{
-  background-color: #304242!important;
 }
 
 .row1 {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 2fr 1fr ;
   grid-template-areas: "quote leah";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 
@@ -269,16 +204,14 @@ h2{
   grid-area: quote;
   align-content: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
-
 .signature {
   font-family: apricots, cursive;
-  color: #304242;
   font-weight: 300;
-  font-size: 3rem;
+  font-size: 1.75em;
   justify-self: end;
 }
 
@@ -295,13 +228,8 @@ border-radius: 1em;
   grid-template-rows: auto;
   grid-template-columns: 1fr 2fr ;
   grid-template-areas: "pepper text";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
-  /* import from events */
-  background-color: #e8DDa9;
-  padding: 2rem 4rem 2rem 4rem;
-  /* border-radius: 3rem; */
-  margin: 2rem 0 2rem 0;
 }
 .row2>.c1{
   grid-area: pepper;
@@ -325,7 +253,7 @@ border-radius: 1em;
   grid-template-rows: auto;
   grid-template-columns: 2fr 1fr ;
   grid-template-areas: "quote leah";
-  margin: 2em 10% 2em 10%;
+  margin: 5vw;
   align-items: center;
 }
 
@@ -358,12 +286,10 @@ border-radius: 1em;
 }
 
 .just-txt{
-  /* text-align: justify!important; */
-  text-align-last: left;
+  text-align: justify;
 }
 
 hr{
-  color:#304242!important;
   border: 8px solid #304242!important;
   border-radius: 0.25em;
 }
@@ -374,57 +300,7 @@ footer {
 
 }
 
-.sect-body-left {
-  margin-right: 2em;
-}
-
-.sect-body-right {
-  margin-left: 2em;
-}
-
-.vendor_pics_box {
-  display: grid;
-  max-width: 100vw;
-  grid-template-columns: repeat(6, auto);
-  grid-template-rows: repeat(5, auto);
-  justify-items: center;
-
-}
-
-.vendor_pic_spot{
-  max-width: 15vw;
-}
-.vendor_pic_spot > img{
-  max-width: 12.5rem;
-  margin: 2.5rem;
-}
-
-@media (max-width: 1340px){
-  .motto {
-    font-size: 3.5rem;
-  }
-  .vendor_pics_box {
-    display: grid;
-    max-width: 100vw;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(6, auto);
-    justify-items: center;
-  
-  }
-  
-  .vendor_pic_spot{
-    max-width: 15vw;
-  }
-  .vendor_pic_spot > img{
-    max-width: 10rem;
-    margin: .25rem;
-  }
-}
 @media (max-width: 960px){
-  .cimg {
-    height: 100%!important;
-  }
-  
   .row1{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -452,73 +328,28 @@ footer {
   .navbar{
     font-size: 2em;
   }
-  .sect-body-left {
-    margin-right: 0em;
-  }
-  
-  .sect-body-right {
-    margin-left: 0em;
-  }
 
-  .motto {
-    font-size: 3rem;
-  }
-
-  .vendor_pics_box {
-    display: grid;
-    max-width: 100vw;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(8, auto);
-    justify-items: center;
-  
-  }
-  
-  .vendor_pic_spot{
-    max-width: 15vw;
-  }
-  .vendor_pic_spot > img{
-    max-width: 5rem;
-    margin: .5rem;
-  }
 }
 
 @media (max-width: 768px){
-  .cimg {
-    height: 100%!important;
-  }
   .site-logo{
     max-width: 15em;
     justify-self: flex-start;
   }
 
-  .top-blurb{
-    margin: 0 1.5rem;
-  }
-
-  .row1{
-    margin: 3rem 1.5rem
-  }
   .motto {
     font-size: 1.5em;
-
-  color: #6b838b!important;
-  width: 100%;
-  /* margin: 24px; */
-  font-family: "Open Sans", sans-serif;
-  justify-content: center;
   }
-  
+  .page-divider {
+    display: none;
+  }
+  .body-text{
+    margin: 0;
+  }
 }
 
 @media (max-width: 576px){
   .motto{
     font-size: 1em;
-  }
-  .sect-body-left {
-    margin-right: 0em;
-  }
-  
-  .sect-body-right {
-    margin-left: 0em;
   }
 }
