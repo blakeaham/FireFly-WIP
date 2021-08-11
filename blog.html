@@ -28,8 +28,9 @@
     <!-- onclick="window.location.href='index.html';" -->
 
     <div class="text-center">
-        <img class="site-logo mt-5 rounded mx-auto d-block" src="../img/fireflyfarmlogo_vector1.svg"
-            alt="Firefly Farm logo" class="img-fluid">
+        <a href="index.html">
+            <img class="site-logo mt-2 mt-lg-4 mt-xl-5 rounded mx-auto d-block" src="../img/fireflyfarmlogo_vector1.svg"
+                alt="Firefly Farm logo" class="img-fluid"></a>
     </div>
     <!-- <div class="nav-bar">
             <p class="strike">&#9</p>
@@ -48,7 +49,7 @@
         <p></p>
     </div> -->
     <!-- beginning of bootstrap navbar from  https://getbootstrap.com/docs/4.0/examples/navbars/# -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light justify-content-md-center">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light mb-4 bg-light justify-content-md-center">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -56,39 +57,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-2 mt-2">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#!">Home <span class="sr-only">(current)</span></a>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.localline.ca/firefly-farm-4" target="_blank"
-                        target="_blank">Shop</a>
+                        target="_blank">Shop Local</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="!#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown10">
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="crew.html">Crew</a>
+                        <a class="dropdown-item" href="events.html">Events</a>
+                        <a class="dropdown-item" href="services.html">Services</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="!#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">Our Farms</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown10">
-                        <a class="dropdown-item" href="21ststfarm.html">Firefly</a>
-
-                        <a class="dropdown-item" href="rise.html">Rise</a>
-                        <a class="dropdown-item" href="crew.html">Our Crew</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="events.html" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false" onclick="window.location.href='events.html';">Events</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown10">
-                        <a class="dropdown-item" href="events.html#plantsale">Spring Plant Sale</a>
-                        <a class="dropdown-item" href="events.html#market">Summer Pop-up Markets</a>
-                        <a class="dropdown-item" href="events.html#fttdinner">Summer Farm-to-Table Dinners</a>
-                        <a class="dropdown-item" href="events.html#fallfest">Fall Leaf Festival</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="!#" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">Services</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown10">
-                        <a class="dropdown-item" href="#hoop">Hoop Houses</a>
-                        <a class="dropdown-item" href="#consult">Consulting</a>
+                        <a class="dropdown-item" href="21ststfarm.html">Firefly Farm</a>
+                        <a class="dropdown-item" href="rise.html">RISE Farms</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -115,7 +106,7 @@
         </div>
     </div> -->
 
-    <h1>Farm Blog</h1>
+    <h1 class="blog_head">farm blog</h1>
 
     <div class="row1 tall_big" id="hoop">
         <div class="c2" align="center">
@@ -155,7 +146,7 @@
     <div class="row1 tall_big" id="hoop">
         <div class="c2" align="center">
             <div class="secthead inside-secthead inside-secthead-left" align="center">
-                so much to say about 2020
+                on writing and growing
             </div>
             <p class="just-txt body-text row-text row-text-left">So in my undergraduate days I studied creative writing,
                 amongst other subjects, but to tell the truth my attempts at poetry were just horrible. I remember one
