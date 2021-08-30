@@ -394,7 +394,7 @@ footer {
 .vendor_pic_spot{
   max-width: 15vw;
 }
-.vendor_pic_spot > img{
+.vendor_pic_spot > a > img{
   max-width: 12.5rem;
   margin: 2.5rem;
 }
